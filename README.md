@@ -36,7 +36,7 @@ Other variable names, especially multi-character ones are **undefined behavior**
 ```py
 <expression> := { (<expression>) | <operation> | <variable> | <value> }
 <variable> := { a-z | A-Z }
-<value> := { 0-9 }+ {.}? { 0-9 }
+<value> := { 0-9 }+ {.}? { 0-9 }*
 <operation> := <expression> + <expression> | <expression> - <expression> | <expression> * <expression> | <expression> / <expression>
 ```
 Note that * and / has precedence over + and -
